@@ -15,15 +15,7 @@ services:
       - "CONANEXILES_Game_RconPlugin_RconMaxKarma=60"
       - "CONANEXILES_UPDATE_SHUTDOWN_TIMER=15"
       - TZ=America/Denver
-      # Mods
-      ## Pippi: 880454836                                    # Servermanagemnt on another level
-      ## Fashionist: 1159180273                              # Nice Styles, also restyle ingame
-      ## Barbarian Barber: 2050780234                        # Very Nice Mod, with alot new hair styles; works well in combination with fashionist
-      ## Nilfhein minimap: 1389908968                        # Very nice minimap
-      ## Less Building Placement Restrictions: 1369743238    # Stop limitations of building system
-      ## Lexa's Exiled Lands Improved: 2356146223            # Dual Wield (Sword, Axe) and some other nice enhacements
-      ## Javelin Improved: 1701136207                        # One of the best, new javelin combos and styles, well balanced
-      - "CONANEXILES_MODS=880454836,1159180273,1389908968,1369743238,2050780234,2356146223,1701136207"
+      - "CONANEXILES_MODS="
       # Very Good Defaults
       - "CONANEXILES_Engine_/script/onlinesubsystemutils.ipnetdriver_NetServerMaxTickRate=30" #INSERT A VALUE OF 30 OR HIGHER
       - "CONANEXILES_Engine_/script/onlinesubsystemutils.ipnetdriver_MaxClientRate=600000"
