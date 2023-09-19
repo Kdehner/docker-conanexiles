@@ -1,15 +1,6 @@
 # docker-conanexiles
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/alinmear/docker-conanexiles.svg?style=flat)](https://hub.docker.com/r/alinmear/docker-conanexiles/)
-[![Github Stars](https://img.shields.io/github/stars/alinmear/docker-conanexiles.svg?style=flat)](https://github.com/alinmear/docker-conanexiles)
-[![Github Forks](https://img.shields.io/github/forks/alinmear/docker-conanexiles.svg?style=flat?label=github%20forks)](https://github.com/alinmear/docker-conanexiles/)
-[![Gitter](https://img.shields.io/gitter/room/alinmear/docker-conanexiles.svg?style=flat)](https://gitter.im/alinmear/docker-conanexiles)
-[![Donation](https://img.shields.io/badge/Buy%20me%20a-coffee-blue?style=flat)](https://www.paypal.com/donate?business=VGB57FGZRDEFQ&currency_code=EUR)
-
----
 **NOTE**
-
-Mod support reworked. Manual Installation with mods.txt File will no longer work. Use the New Env Variable. See the mods section within this readme for more informations and the list of mods we are currently using on our dedicated server - i can heavily recommend them.
 
 While configuring my server and trying to fix some shortcomings i stumbled over an overwhelming good post about server tweaks: <https://steamcommunity.com/sharedfiles/filedetails/?id=2130895654>. After enabling those settings, conanexiles feels indeed like another game. I added those configs within the example `docker-compose.yml` and also within this Readme. Hopefuly this will make you game experience alot better...
 
@@ -48,7 +39,7 @@ docker compose pull
 
 ### Update image and rollout
 
-`docker compose pull && docker-compose up -d`
+`docker compose pull && docker compose up -d`
 
 ### Shutdown
 
@@ -84,7 +75,7 @@ version: "3.5"
 
 services:
   ce0:
-    image: alinmear/docker-conanexiles:latest
+    image: ghcr.io/kdehner/docker-conanexiles/conanexiles-docker:latest
     restart: unless-stopped
     environment:
       - "CONANEXILES_ServerSettings_ServerSettings_AdminPassword=ThanksForThisSmartSolution"
@@ -407,7 +398,7 @@ version: "3.5"
 
 services:
   ce0:
-    image: alinmear/docker-conanexiles:latest
+    image: ghcr.io/kdehner/docker-conanexiles/conanexiles-docker:latest
     depends_on: 
       - redis
     restart: unless-stopped
@@ -422,7 +413,7 @@ services:
       - "CONANEXILES_MODS=880454836,1159180273,1389908968,1369743238,2050780234,2356146223,1701136207"
 ```
 
-NOTE: Yout can get the modids from Steamworkshop.
+NOTE: You can get the modids from Steamworkshop.
 
 After a restart the mods will be downloaded, activated and updated via steamworkshop.
 
