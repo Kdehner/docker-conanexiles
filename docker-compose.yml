@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   ce0:
-    image: alinmear/docker-conanexiles:latest
+    image: kdehner/docker-conanexiles:latest
     restart: unless-stopped
     environment:
       - "CONANEXILES_ServerSettings_ServerSettings_AdminPassword=ThanksForThisSmartSolution"
