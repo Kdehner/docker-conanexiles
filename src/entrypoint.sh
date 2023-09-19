@@ -92,9 +92,9 @@ setup_server_config_first_time() {
 
     # paste default config pvp
     [ ! -f "${_config_folder}/ServerSettings.ini" ] && \
-	mkdir -p "${_config_folder}" && ( ([[ $CONANEXILES_SERVER_TYPE == "pve" ]] && \
-					     server_settings_template_pve > "${_config_folder}/ServerSettings.ini" ) || \
-						 server_settings_template_pvp > "${_config_folder}/ServerSettings.ini")
+	mkdir -p "${_config_folder}" && ( ([[ $CONANEXILES_SERVER_TYPE == "pvp" ]] && \
+						 server_settings_template_pvp > "${_config_folder}/ServerSettings.ini") || \
+					     server_settings_template_pve > "${_config_folder}/ServerSettings.ini")
     return 0
 }
 

@@ -350,7 +350,7 @@ If there is a folder with configurations found at `/tmp/docker-conanexiles` this
 
 ### Default Templates
 
-Use the environment variable `CONANEXILES_SERVER_TYPE=pve` to use the pve template; otherwise the pvp template will be used if no configuration has been provided.
+Use the environment variable `CONANEXILES_SERVER_TYPE=pvp` to use the pvp template; otherwise the pve template will be used if no configuration has been provided.
 
 ---
 
