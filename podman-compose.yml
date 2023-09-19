@@ -3,7 +3,7 @@ version: "3.5"
 services:
   ce0:
     build: src/
-    image: alinmear/docker-conanexiles:latest
+    image: kdehner/docker-conanexiles:latest
     depends_on:
       - redis
     restart: always
