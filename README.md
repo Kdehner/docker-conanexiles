@@ -34,13 +34,13 @@ While configuring my server and trying to fix some shortcomings i stumbled over 
 ### Get started
 
 ```sh
-curl -LJO https://raw.githubusercontent.com/alinmear/docker-conanexiles/master/docker-compose.yml
-docker-compose pull
+curl -LJO https://raw.githubusercontent.com/kdehner/docker-conanexiles/master/docker-compose.yml
+docker compose pull
 ```
 
 #### Start all services (3 games services and 1 redis)
 
-`docker-compose up -d`
+`docker compose up -d`
 
 #### Start one game service and redis
 
@@ -48,11 +48,11 @@ docker-compose pull
 
 ### Update image and rollout
 
-`docker-compose pull && docker-compose up -d`
+`docker compose pull && docker-compose up -d`
 
 ### Shutdown
 
-`docker-compose down`
+`docker compose down`
 
 ---
 
