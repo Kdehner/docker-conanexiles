@@ -1,8 +1,8 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="Paul Steinlechner"
+LABEL maintainer="Kevin Dehner"
 
-ENV TIMEZONE=Europe/Vienna \
+ENV TIMEZONE=America/Denver \
     DEBIAN_FRONTEND=noninteractive \
     CONANEXILES_MASTERSERVER=1 \
     CONANEXILES_Game_RconPlugin_RconEnabled=1 \
