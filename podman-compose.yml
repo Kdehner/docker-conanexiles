@@ -3,7 +3,7 @@ version: "3.5"
 services:
   ce0:
     build: src/
-    image: kdehner/docker-conanexiles:latest
+    image: ghcr.io/kdehner/docker-conanexiles/conanexiles-docker:latest
     depends_on:
       - redis
     restart: always
@@ -25,7 +25,7 @@ services:
         - data:/conanexiles
 
   ce1:
-    image: alinmear/docker-conanexiles:latest
+    image: ghcr.io/kdehner/docker-conanexiles/conanexiles-docker:latest
     depends_on:
       - redis
     restart: always
@@ -46,7 +46,7 @@ services:
         - data:/conanexiles
 
   ce2:
-    image: alinmear/docker-conanexiles:latest
+    image: ghcr.io/kdehner/docker-conanexiles/conanexiles-docker:latest
     depends_on:
       - redis
     restart: always

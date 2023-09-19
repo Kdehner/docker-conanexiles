@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   ce0:
-    image: kdehner/docker-conanexiles:latest
+    image: ghcr.io/kdehner/docker-conanexiles/conanexiles-docker:latest
     depends_on:
       - redis
     restart: unless-stopped
